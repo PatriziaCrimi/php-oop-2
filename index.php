@@ -1,5 +1,14 @@
 <?php
-  require 'User.php';
+  /* ASSIGNMENT
+    definire la struttura di una tabella users che contiene i dati degli utenti di un blog
+    definire una classe User che "mappa" la tabella users
+    creare alcune istanze della classe User
+    per stampare i dati degli utenti
+  */
+  require_once 'User.php';
+  require_once 'Admin.php';
+  require_once 'users.php';
+  require_once 'admins.php';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -15,9 +24,18 @@
     <div id="page-wrapper">
       <div class="container">
         <h1>Blog users</h1>
-        <h2>sottotitolo</h2>
+        <h2>Admins</h2>
         <p>
-          <?php echo($prova); ?>
+          <?php echo('prova') ?>
+        </p>
+        <p>
+          <?php echo('prova') ?>
+        </p>
+        <p>
+          <?php echo($prova_us) ?>
+        </p>
+        <p>
+          <?php echo($prova_adm) ?>
         </p>
       </div>
     </div>

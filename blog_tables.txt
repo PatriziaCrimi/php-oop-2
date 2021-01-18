@@ -1,11 +1,16 @@
-USERS TABLE
+----------------------------- BLOG TABLES -----------------------------
+
+
+----- USERS TABLE ----- 
 
 id												INT, PRIMARY_KEY (AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
-name											VARCHAR(50), NOT NULL
-surname											VARCHAR(50), NOT NULL, INDEX
+first_name										VARCHAR(50), NOT NULL
+last_name										VARCHAR(50), NOT NULL, INDEX
 nickname										VARCHAR(20), NOT NULL, UNIQUE, INDEX
+password										VARCHAR(10), NOT NULL, UNIQUE
 age												TINYINT, NOT NULL
 birth_date										DATE, NULL
+gender											VARCHAR(10), NULL
 nationality										VARCHAR(20), NULL
 occupation										VARCHAR(20), NULL
 email											VARCHAR(20), NOT NULL, UNIQUE, INDEX
@@ -17,3 +22,10 @@ mailing_list (0 = no / 1 = yes)					TINYINT, NOT NULL, DEFAULT(1)
 registration_date								DATETIME, NOT NULL
 notes											VARCHAR(255), NULL
 
+
+
+----- ADMINS TABLE -----
+
+// Eredita le stesse proprietà della tabella "Users" e in più avrà le seguenti:
+
+level											TINYINT, NOT NULL, DEFAULT(1)
