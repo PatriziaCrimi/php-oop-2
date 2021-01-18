@@ -24,12 +24,166 @@
     <div id="page-wrapper">
       <div class="container">
         <h1>Blog users</h1>
+        <!-- Admins section -->
         <h2>Admins</h2>
+        <div class="admins-wrapper">
+          <div class="admin-box">
+            <ul>
+              <li>
+                <span>
+                  <li class="level">
+                    Level:
+                    <span>
+                      <?php echo($admin_01->level) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Name:
+                    <span>
+                      <?php echo($admin_01->first_name . " " . $admin_01->last_name) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Nickname:
+                    <span>
+                      <?php echo($admin_01->nickname) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Age:
+                    <span>
+                      <?php echo($admin_01->age) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Nationality:
+                    <span>
+                      <?php echo($admin_01->nationality) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Occupation:
+                    <span>
+                      <?php echo($admin_01->occupation) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Registration date:
+                    <span>
+                      <?php echo($admin_01->registration_date) ?>
+                    </span>
+                  </li>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="admin-box">
+            <ul>
+              <li>
+                <span>
+                  <li class="level">
+                    Level:
+                    <span>
+                      <?php echo($admin_02->level) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Name:
+                    <span>
+                      <?php echo($admin_02->first_name . " " . $admin_02->last_name) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Nickname:
+                    <span>
+                      <?php echo($admin_02->nickname) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Age:
+                    <span>
+                      <?php echo($admin_02->age) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Nationality:
+                    <span>
+                      <?php echo($admin_02->nationality) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Occupation:
+                    <span>
+                      <?php echo($admin_02->occupation) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Registration date:
+                    <span>
+                      <?php echo($admin_02->registration_date) ?>
+                    </span>
+                  </li>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="admin-box">
+            <ul>
+              <li>
+                <span>
+                  <li class="level">
+                    Level:
+                    <span>
+                      <?php echo($admin_03->level) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Name:
+                    <span>
+                      <?php echo($admin_03->first_name . " " . $admin_03->last_name) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Nickname:
+                    <span>
+                      <?php echo($admin_03->nickname) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Age:
+                    <span>
+                      <?php echo($admin_03->age) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Nationality:
+                    <span>
+                      <?php echo($admin_03->nationality) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Occupation:
+                    <span>
+                      <?php echo($admin_03->occupation) ?>
+                    </span>
+                  </li>
+                  <li>
+                    Registration date:
+                    <span>
+                      <?php echo($admin_03->registration_date) ?>
+                    </span>
+                  </li>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Users section -->
         <h2>Users</h2>
         <div class="users-wrapper">
           <div class="user-box">
             <ul>
-              <li>
+              <li class="user-id">
                 User ID:
                 <span>
                   <?php echo($user_01->id) ?>
@@ -75,7 +229,7 @@
           </div>
           <div class="user-box">
             <ul>
-              <li>
+              <li class="user-id">
                 User ID:
                 <span>
                   <?php echo($user_02->id) ?>
@@ -121,7 +275,7 @@
           </div>
           <div class="user-box">
             <ul>
-              <li>
+              <li class="user-id">
                 User ID:
                 <span>
                   <?php echo($user_03->id) ?>
@@ -167,7 +321,7 @@
           </div>
           <div class="user-box">
             <ul>
-              <li>
+              <li class="user-id">
                 User ID:
                 <span>
                   <?php echo($user_04->id) ?>

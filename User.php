@@ -1,7 +1,4 @@
 <?php
-  // VARIABLES & CONSTANTS INITIALIZATION
-  $psw_max_length = 10;
-
   // CLASS CREATION
   class User {
     // INSTANCE VARIABLES INTIALIZATION
@@ -9,13 +6,13 @@
     public $first_name;
     public $last_name;
     public $nickname;
-    private $password;
+    public $password;
     public $age;
     public $birth_date;
     public $gender;
     public $nationality;
     public $occupation;
-    private $email;
+    public $email;
     public $telephone;
     public $address;
     public $bio_description;
@@ -54,7 +51,7 @@
     }
 
     // SETTER FUNCTIONS
-    public function setPassword($_password) {
+    public function setPassword($_password, $psw_max_length) {
       if(strlen($_password) > 0 && strlen($_password) <= $psw_max_length) {
         $this->password = $_password;
       } else {
@@ -62,19 +59,19 @@
       }
     }
 
-    public function setAge($_age) {
-      if(is_numeric($_age) && $_age > 18 && $_age < 120) {
+    public function setAge($_age, $min_age, $max_age) {
+      if(is_numeric($_age) && $_age > $min_age && $_age < $max_age) {
         $this->age = $_age;
       } else {
         $this->age = null;
       }
     }
 
-    public function setEmail($_email) {
-      if (strpos($this->email, '.') !== false && strpos($this->email, '@') !== false) {
-        $this->mail = $_mail;
+    public function setEmail($_mail) {
+      if (strpos($_mail, '.') !== false && strpos($_mail, '@') !== false) {
+        $this->email = $_mail;
       } else {
-        $this->mail = null;
+        $this->email = 'errore';
       }
     }
   }

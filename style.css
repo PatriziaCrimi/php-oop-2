@@ -20,10 +20,10 @@ h1 {
 
 h2 {
   font-weight: 800;
-  padding: 20px 0;
+  padding: 30px 0 20px;
   font-size: 30px;
-  color: #CEE3F6;
-  text-shadow: 3px 3px #0404B4;
+  color: #6BAEF5;
+  text-shadow: 2px 2px #0404B4;
   text-transform: capitalize;
 }
 
@@ -67,30 +67,48 @@ h1::after {
   font-size: 30px;
 }
 
+.admins-wrapper,
 .users-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 20px;
 }
 
+.admins-wrapper .admin-box,
 .users-wrapper .user-box {
-  border: 3px solid #5882FA;
-  box-shadow: inset 0px 0px 20px #81BEF7;
   border-radius: 10px;
   margin: 10px;
   max-width: 250px;
   min-height: 250px;
-  padding: 5px;
+  padding: 10px;
 }
 
+.admins-wrapper .admin-box {
+  border: 3px solid #5882FA;
+  box-shadow: inset 0px 0px 20px #81BEF7;
+}
+
+.users-wrapper .user-box {
+  border: 3px solid #A9D0F5;
+  box-shadow: inset 0px 0px 20px #81BEF7;
+}
+
+.admin-box ul li,
 .user-box ul li {
   padding: 5px 0;
 }
 
+.admin-box ul li > span,
 .user-box ul li > span {
   color: #0404B4;
   font-weight: 600;
+}
+
+li.level,
+li.user-id {
+  color: red;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
