@@ -1,0 +1,19 @@
+USERS TABLE
+
+id												INT, PRIMARY_KEY (AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+name											VARCHAR(50), NOT NULL
+surname											VARCHAR(50), NOT NULL, INDEX
+nickname										VARCHAR(20), NOT NULL, UNIQUE, INDEX
+age												TINYINT, NOT NULL
+birth_date										DATE, NULL
+nationality										VARCHAR(20), NULL
+occupation										VARCHAR(20), NULL
+email											VARCHAR(20), NOT NULL, UNIQUE, INDEX
+telephone										VARCHAR(15), NULL
+address											VARCHAR(50), NULL
+bio_description									TEXT, NULL
+interests										TEXT, NULL
+mailing_list (0 = no / 1 = yes)					TINYINT, NOT NULL, DEFAULT(1)
+registration_date								DATETIME, NOT NULL
+notes											VARCHAR(255), NULL
+
