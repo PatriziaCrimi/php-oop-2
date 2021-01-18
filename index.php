@@ -25,16 +25,17 @@
       <div class="container">
         <h1>Blog users</h1>
         <h2>Admins</h2>
-        <p>Current date: 
-          <?php echo($current_date) ?>
-        </p>
-        <p>
-          <?php echo($prova_adm) ?>
-        </p>
-        <p>
-          <?php var_dump($user_01) ?>
-        </p>
-      </div>
-    </div>
+        <h2>Users</h2>
+        <div class="users-wrapper">
+          <div class="user-box">
+            <ul>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  <!-- Closing container -->
+    </div>  <!-- Closing page-wrapper -->
   </body>
 </html>
