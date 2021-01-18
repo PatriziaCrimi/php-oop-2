@@ -69,10 +69,28 @@ h1::after {
 
 .users-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .users-wrapper .user-box {
-  border: 3px solid #0404B4;
+  border: 3px solid #5882FA;
+  box-shadow: inset 0px 0px 20px #81BEF7;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 250px;
+  min-height: 250px;
+  padding: 5px;
+}
+
+.user-box ul li {
+  padding: 5px 0;
+}
+
+.user-box ul li > span {
+  color: #0404B4;
+  font-weight: 600;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */

@@ -30,7 +30,184 @@
           <div class="user-box">
             <ul>
               <li>
-
+                User ID:
+                <span>
+                  <?php echo($user_01->id) ?>
+                </span>
+              </li>
+              <li>
+                Name:
+                <span>
+                  <?php echo($user_01->first_name . " " . $user_01->last_name) ?>
+                </span>
+              </li>
+              <li>
+                Nickname:
+                <span>
+                  <?php echo($user_01->nickname) ?>
+                </span>
+              </li>
+              <li>
+                Age:
+                <span>
+                  <?php echo($user_01->age) ?>
+                </span>
+              </li>
+              <li>
+                Nationality:
+                <span>
+                  <?php echo($user_01->nationality) ?>
+                </span>
+              </li>
+              <li>
+                Occupation:
+                <span>
+                  <?php echo($user_01->occupation) ?>
+                </span>
+              </li>
+              <li>
+                Registration date:
+                <span>
+                  <?php echo($user_01->registration_date) ?>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="user-box">
+            <ul>
+              <li>
+                User ID:
+                <span>
+                  <?php echo($user_02->id) ?>
+                </span>
+              </li>
+              <li>
+                Name:
+                <span>
+                  <?php echo($user_02->first_name . " " . $user_02->last_name) ?>
+                </span>
+              </li>
+              <li>
+                Nickname:
+                <span>
+                  <?php echo($user_02->nickname) ?>
+                </span>
+              </li>
+              <li>
+                Age:
+                <span>
+                  <?php echo($user_02->age) ?>
+                </span>
+              </li>
+              <li>
+                Nationality:
+                <span>
+                  <?php echo($user_02->nationality) ?>
+                </span>
+              </li>
+              <li>
+                Occupation:
+                <span>
+                  <?php echo($user_02->occupation) ?>
+                </span>
+              </li>
+              <li>
+                Registration date:
+                <span>
+                  <?php echo($user_02->registration_date) ?>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="user-box">
+            <ul>
+              <li>
+                User ID:
+                <span>
+                  <?php echo($user_03->id) ?>
+                </span>
+              </li>
+              <li>
+                Name:
+                <span>
+                  <?php echo($user_03->first_name . " " . $user_03->last_name) ?>
+                </span>
+              </li>
+              <li>
+                Nickname:
+                <span>
+                  <?php echo($user_03->nickname) ?>
+                </span>
+              </li>
+              <li>
+                Age:
+                <span>
+                  <?php echo($user_03->age) ?>
+                </span>
+              </li>
+              <li>
+                Nationality:
+                <span>
+                  <?php echo($user_03->nationality) ?>
+                </span>
+              </li>
+              <li>
+                Occupation:
+                <span>
+                  <?php echo($user_03->occupation) ?>
+                </span>
+              </li>
+              <li>
+                Registration date:
+                <span>
+                  <?php echo($user_03->registration_date) ?>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="user-box">
+            <ul>
+              <li>
+                User ID:
+                <span>
+                  <?php echo($user_04->id) ?>
+                </span>
+              </li>
+              <li>
+                Name:
+                <span>
+                  <?php echo($user_04->first_name . " " . $user_04->last_name) ?>
+                </span>
+              </li>
+              <li>
+                Nickname:
+                <span>
+                  <?php echo($user_04->nickname) ?>
+                </span>
+              </li>
+              <li>
+                Age:
+                <span>
+                  <?php echo($user_04->age) ?>
+                </span>
+              </li>
+              <li>
+                Nationality:
+                <span>
+                  <?php echo($user_04->nationality) ?>
+                </span>
+              </li>
+              <li>
+                Occupation:
+                <span>
+                  <?php echo($user_04->occupation) ?>
+                </span>
+              </li>
+              <li>
+                Registration date:
+                <span>
+                  <?php echo($user_04->registration_date) ?>
+                </span>
               </li>
             </ul>
           </div>
