@@ -25,17 +25,14 @@
       <div class="container">
         <h1>Blog users</h1>
         <h2>Admins</h2>
-        <p>
-          <?php echo('prova') ?>
-        </p>
-        <p>
-          <?php echo('prova') ?>
-        </p>
-        <p>
-          <?php echo($prova_us) ?>
+        <p>Current date: 
+          <?php echo($current_date) ?>
         </p>
         <p>
           <?php echo($prova_adm) ?>
+        </p>
+        <p>
+          <?php var_dump($user_01) ?>
         </p>
       </div>
     </div>

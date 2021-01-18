@@ -26,7 +26,7 @@
 
     // ------------------------------ CONSTRUCTOR ------------------------------
 
-    function __construct($_id, $first_name, $_last_name, $_nickname, $_password, $_age, $_email, $_mailing_list, $_registration_date) {
+    function __construct($_id, $_first_name, $_last_name, $_nickname, $_password, $_age, $_email, $_mailing_list, $_registration_date) {
       $this->id = $_id;
       $this->first_name = $_first_name;
       $this->last_name = $_last_name;
