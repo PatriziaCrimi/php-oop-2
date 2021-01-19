@@ -2,12 +2,12 @@
   // CLASS CREATION
   class User {
     // INSTANCE VARIABLES INTIALIZATION
-    public $id;
+    public $id_user;
     public $first_name;
     public $last_name;
     public $nickname;
     public $password;
-    public $age;
+    public $age;  // It is better to use only "birth_date" because "age" changes every year
     public $birth_date;
     public $gender;
     public $nationality;
@@ -19,20 +19,19 @@
     public $interests;
     public $mailing_list;
     public $registration_date;
+    public $role;
     public $notes;
 
     // ------------------------------ CONSTRUCTOR ------------------------------
 
-    function __construct($_id, $_first_name, $_last_name, $_nickname, $_password, $_age, $_email, $_mailing_list, $_registration_date) {
-      $this->id = $_id;
-      $this->first_name = $_first_name;
-      $this->last_name = $_last_name;
+    function __construct($_id_user, $_nickname, $_password, $_age, $_email, $_registration_date, $_role) {
+      $this->id_user = $_id_user;
       $this->nickname = $_nickname;
       $this->password = $_password;
       $this->age = $_age;
       $this->email = $_email;
-      $this->mailing_list = $_mailing_list;
       $this->registration_date = $_registration_date;
+      $this->role = $_role;
     }
 
     // ------------------------------ METHODS ------------------------------
@@ -71,7 +70,7 @@
       if (strpos($_mail, '.') !== false && strpos($_mail, '@') !== false) {
         $this->email = $_mail;
       } else {
-        $this->email = 'errore';
+        $this->email = null;
       }
     }
   }

@@ -107,7 +107,8 @@ h1::after {
 }
 
 li.level,
-li.user-id {
+li.user-id,
+li.user-role {
   color: red;
 }
 
