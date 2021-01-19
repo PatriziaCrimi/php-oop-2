@@ -7,7 +7,7 @@
 
   // ----------------------- INSTANCES (OR OBJECTS) CREATION -----------------------
 
-  $user_04 = new User(04, 'francesco_pancetta', 'SpiderPork', 40, 'francis.bacon@email.uk', $current_date, 2);
+  $user_04 = new User(04, 'francesco_pancetta', 'SpiderPork', 40, 'francis.bacon@email.uk', $current_date);
   // Checking that password, age and e-mail are valid values
   $user_04->setPassword($user_04->password, $password_max_length);
   $user_04->setAge($user_04->age, $minimum_age, $maximum_age);
@@ -19,9 +19,10 @@
   $user_04->gender = 'male';
   $user_04->nationality = 'British';
   $user_04->occupation = 'philosopher';
+  $user_04->role = 2;
 
 
-  $user_05 = new User(05, 'omero_simpson', 'doh!', 38, 'homer.simpson@email.us', $current_date, 3);
+  $user_05 = new User(05, 'omero_simpson', 'doh!', 38, 'homer.simpson@email.us', $current_date);
   // Checking that password, age and e-mail are valid values
   $user_05->setPassword($user_05->password, $password_max_length);
   $user_05->setAge($user_05->age, $minimum_age, $maximum_age);
@@ -33,9 +34,10 @@
   $user_05->gender = 'male';
   $user_05->nationality = 'American';
   $user_05->occupation = 'employee';
+  $user_05->role = 3;
 
 
-  $user_06 = new User(06, 'paola_cort', '241973', 48, 'paola.cortellesi@email.it', $current_date, 4);
+  $user_06 = new User(06, 'paola_cort', '241973', 48, 'paola.cortellesi@email.it', $current_date);
   // Checking that password, age and e-mail are valid values
   $user_06->setPassword($user_06->password, $password_max_length);
   $user_06->setAge($user_06->age, $minimum_age, $maximum_age);
@@ -49,7 +51,7 @@
   $user_06->occupation = 'actress';
 
 
-  $user_07 = new User(07, 'dory', 'kermanshah', 80, 'doris.lessing@email.it', $current_date, 4);
+  $user_07 = new User(07, 'dory', 'kermanshah', 80, 'doris.lessing@email.it', $current_date);
   // Checking that password, age and e-mail are valid values
   $user_07->setPassword($user_07->password, $password_max_length);
   $user_07->setAge($user_07->age, $minimum_age, $maximum_age);

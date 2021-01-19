@@ -9,28 +9,29 @@ first_name										VARCHAR(30), NULL
 last_name										VARCHAR(30), NULL
 nickname										VARCHAR(20), NOT NULL, UNIQUE, INDEX
 password										VARCHAR(30), NOT NULL
-age												TINYINT, NOT NULL
+*age											TINYINT, NOT NULL
+	*Meglio usare solo data_di_nascita perché l'età cambia ogni anno
 birth_date										DATE, NULL
 gender											VARCHAR(10), NULL
 nationality										VARCHAR(30), NULL
 occupation										VARCHAR(20), NULL
 email											VARCHAR(40), NOT NULL, UNIQUE, INDEX
-telephone										VARCHAR(15), NULL
+telephone										VARCHAR(20), NULL
 address											VARCHAR(50), NULL
 bio_description									TEXT, NULL
 interests										TEXT, NULL
-mailing_list (0 = no / 1 = yes)					TINYINT, NULL, DEFAULT(1)
 registration_date								DATETIME, NOT NULL
-role											INT, NOT NULL, DEFAULT(4)
+newsletter (0 = no / 1 = yes)					TINYINT, NOT NULL, DEFAULT(1)
+role											TINYINT, NOT NULL, DEFAULT(4)
 	1 = admin / 2 = editor / 3 = author / 4 = subscriber
 notes											VARCHAR(255), NULL
 
 
 
 --------- ROLES TABLE --------- 
-// Relationship with USERS TABLE: ONE TO MANY:
-	every user can have ONLY ONE role
-	each role can be given to MANY users
+// Relationship with USERS TABLE is ONE TO MANY:
+	- every user can have ONLY ONE role
+	- each role can be given to MANY users
 
 id_role											INT, PRIMARY_KEY (AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
 role_name										VARCHAR(20), NOT NULL
@@ -45,6 +46,6 @@ CHILD CLASS "ADMIN"
 // Eredita le stesse proprietà della tabella "Users" e in più avrà le seguenti:
 
 id_admin										INT, PRIMARY_KEY(AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
-seniority_level									TINYINT, NULL, DEFAULT(1)
+seniority_level									TINYINT, NOT NULL, DEFAULT(1)
 		1 = low / 2 = medium / 3 = high
 notes											VARCHAR(255), NULL

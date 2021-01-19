@@ -5,15 +5,15 @@
   // CLASS CREATION
   class Admin extends User {
     public $id_admin;
-    public $seniority_level;
+    public $seniority_level = 1; // NOT NULL and DEAFULT(1)
     public $notes;
 
     // ------------------------------ CONSTRUCTOR ------------------------------
 
-    function __construct($_id_user = "", $_nickname = "", $_password = "", $_age = "", $_email = "", $_registration_date = "", $_role = 1, $_id_admin) {
+    function __construct($_id_user = "", $_nickname = "", $_password = "", $_age = "", $_email = "", $_registration_date = "", $_id_admin) {
 
       // All the mandatory parameters already in "User" are passed to "Admin"
-      parent::__construct($_id_user, $_nickname, $_password, $_age, $_email, $_registration_date, $_role);
+      parent::__construct($_id_user, $_nickname, $_password, $_age, $_email, $_registration_date);
 
       // Defining the new mandatory properties for the child Class "Admin"
       $this->id_admin = $_id_admin;

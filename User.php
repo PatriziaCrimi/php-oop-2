@@ -17,21 +17,20 @@
     public $address;
     public $bio_description;
     public $interests;
-    public $mailing_list;
     public $registration_date;
-    public $role;
     public $notes;
+    public $newsletter = 1; // NOT NULL and DEAFULT(1)
+    public $role = 4; // NOT NULL and DEAFULT(4)
 
     // ------------------------------ CONSTRUCTOR ------------------------------
 
-    function __construct($_id_user, $_nickname, $_password, $_age, $_email, $_registration_date, $_role) {
+    function __construct($_id_user, $_nickname, $_password, $_age, $_email, $_registration_date) {
       $this->id_user = $_id_user;
       $this->nickname = $_nickname;
       $this->password = $_password;
       $this->age = $_age;
       $this->email = $_email;
       $this->registration_date = $_registration_date;
-      $this->role = $_role;
     }
 
     // ------------------------------ METHODS ------------------------------
